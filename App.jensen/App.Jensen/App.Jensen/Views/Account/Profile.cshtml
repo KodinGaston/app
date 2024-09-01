@@ -1,0 +1,44 @@
+﻿@model App.Jensen.Models.User
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>My Profile</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div>
+    <h4>@Model.UserName</h4>
+    <p>Email: @Model.Email</p>
+
+    @* Mostrar la imagen de perfil solo si existe *@
+    @if (!string.IsNullOrEmpty(Model.URLProfilPic))
+    {
+        <img src="@Model.URLProfilPic" alt="Profile Picture" style="max-width:200px;" />
+    }
+    else
+    {
+        <p>No profile picture uploaded.</p>
+    }
+</div>
+
+@* Formulario para subir una nueva imagen de perfil *@
+<form asp-action="UploadProfilePicture" asp-controller="Account" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="userId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="profilePicture">Upload New Profile Picture</label>
+        <input type="file" id="profilePicture" name="profilePicture" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+@* Botón de Log Out *@
+<form asp-action="Logout" asp-controller="Account" method="post" style="margin-top:20px;">
+    <button type="submit" class="btn btn-danger">Log Out</button>
+</form>

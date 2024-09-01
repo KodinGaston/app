@@ -1,0 +1,108 @@
+/* wwwroot/css/site.css */
+
+/* Estilo para enlaces de marca en la barra de navegación */
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Estilo para enlaces */
+a {
+    color: #00bcd4; /* Aqua */
+}
+
+h1.display-4 {
+    color: darkorchid;
+    font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+p {
+    color: dodgerblue;
+}
+
+/* Estilo para botones de enlace */
+.btn-link {
+    color: #00bcd4; /* Aqua */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #00bcd4; /* Aqua */
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .btn-link:hover {
+        color: #fff;
+        background-color: #00bcd4; /* Aqua */
+        border-color: #0097a7; /* Aqua más oscuro */
+    }
+
+/* Estilo para el botón Login */
+.btn-secondary {
+    color: #fff;
+    background-color: #7c4dff; /* Gris oscuro */
+    border-color: #424242; /* Gris más oscuro */
+}
+
+    .btn-secondary:hover {
+        background-color: #00bcd4; /* Gris intermedio */
+        border-color: #7c4dff; /* Gris oscuro */
+    }
+
+/* Estilos específicos para botones primarios */
+.btn-primary {
+    color: #fff;
+    background-color: #76ff03; /* Verde Claro */
+    border-color: #d32f2f; /* Rojo más oscuro */
+}
+
+/* Espacio alrededor de los botones */
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+
+/* Estilo para el enlace activo en nav-pills */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #00bcd4; /* Aqua */
+    border-color: #0097a7; /* Aqua más oscuro */
+}
+
+/* Estilo para el borde superior e inferior */
+.border-top {
+    border-top: 1px solid #b2ebf2; /* Azul claro */
+}
+
+.border-bottom {
+    border-bottom: 1px solid #b2ebf2; /* Azul claro */
+}
+
+/* Estilo para sombras de caja */
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .15); /* Sombra más pronunciada */
+}
+
+/* Estilo para el botón de aceptar política */
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Estilo para el pie de página */
+.footer {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 50px;
+    background-color: darkviolet;
+    color: aqua;
+    text-align: center;
+}
+

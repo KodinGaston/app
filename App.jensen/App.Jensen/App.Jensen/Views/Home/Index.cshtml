@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Gastón's team</h1>
+    <p>When passion, create action! <a href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Eydm9kNTZxcTE2OHI2cnEzbjN4ZXYxdnI5bTkydjF2ems4cjBiOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R6gvnAxj2ISzJdbA63/giphy.gif" target="_blank">buildt with love</a>.</p>
+
+    <a href="/Account/Register" class="btn btn-link">Register</a>
+
+    <!-- Formulario para el Login con método POST -->
+    <form asp-action="Login" asp-controller="Account" method="post" style="display: inline;">
+        <button type="submit" class="btn btn-secondary">Login</button>
+    </form>
+</div>
+
